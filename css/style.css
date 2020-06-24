@@ -17,7 +17,7 @@ body {
   margin: auto; }
 
 .swiper-container {
-  max-width: 420px;
+  max-width: 400px;
   margin-left: 0; }
 
 @font-face {
@@ -152,7 +152,7 @@ body {
   right: -45px; }
 
 .footer {
-  background-csolor: #141218;
+  background-color: #141218;
   padding: 20px;
   margin-top: auto; }
   .footer__content {
