@@ -1,0 +1,95 @@
+@media ( max-width: 760px )
+ .play
+   display: none
+ .footer
+   &__content
+    flex-direction: column
+    align-items: flex-start
+   &__copyright
+    display: block
+    margin-bottom: 8px
+   &__link:first-child
+    margin-left: 0
+@media ( max-width: 540px )
+ .menu
+  &__button
+   display: block
+   position: absolute
+   right: 35px
+   top: 40px
+   width: 30px
+   height: 2px
+   background-color: #fff
+   border: none
+   cursor: pointer
+  &__button::before
+   content: ''
+   display: block
+   position: absolute
+   left: 0
+   top: 0
+   width: 30px
+   height: 2px
+   background-color: #fff
+   border: none
+   margin-top: -7px
+   transition: transform 0.2s
+ .menu__button::after
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 30px
+  height: 2px
+  background-color: #fff
+  border: none
+  margin-top: 7px
+  transition: transform 0.2s
+ .menu__button--active
+  height: 0
+  &::after
+   transform: rotate(45deg)
+   margin-top: 0
+  &::before
+   transform: rotate(-45deg)
+   margin-top: 0
+ .header
+  display: none
+  flex-direction: column
+  position: absolute
+  right: 0
+  top: 0
+  background-color:#9D2929
+  width: 250px
+  padding-bottom: 40px
+ .header--active
+  display: flex
+ .logo
+  margin-bottom: 25px
+ .menu
+  &__list
+   order: 2
+   margin: auto
+   display: flex
+   flex-direction: column
+   align-items: center
+  &__link
+   margin-right: 0
+   margin-bottom: 17px
+ .social
+  order: 1
+  margin-bottom: 22px
+  &__link:first-child
+   margin-left: 0
+ .swiper-container
+  width: 80%
+ .main
+  &__content
+   margin-top: 196px
+  &__title
+   font-size: 56px
+ .series
+  width: 80%
+
+

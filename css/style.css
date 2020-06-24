@@ -13,12 +13,16 @@ body {
   background-position: top right 20%; }
 
 .container {
+  width: 95%;
   max-width: 1140px;
   margin: auto; }
 
 .swiper-container {
   max-width: 400px;
   margin-left: 0; }
+
+.menu__button {
+  display: none; }
 
 @font-face {
   font-family: 'MasonChronicles';
@@ -161,6 +165,98 @@ body {
     align-items: center; }
   .footer__link {
     text-decoration: none;
-    color: #727174; }
+    color: #727174;
+    margin-left: 25px; }
   .footer__copyright {
     color: #727174; }
+
+@media (max-width: 760px) {
+  .play {
+    display: none; }
+  .footer__content {
+    flex-direction: column;
+    align-items: flex-start; }
+  .footer__copyright {
+    display: block;
+    margin-bottom: 8px; }
+  .footer__link:first-child {
+    margin-left: 0; } }
+
+@media (max-width: 540px) {
+  .menu__button {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer; }
+  .menu__button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    margin-top: -7px;
+    transition: transform 0.2s; }
+  .menu__button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    margin-top: 7px;
+    transition: transform 0.2s; }
+  .menu__button--active {
+    height: 0; }
+    .menu__button--active::after {
+      transform: rotate(45deg);
+      margin-top: 0; }
+    .menu__button--active::before {
+      transform: rotate(-45deg);
+      margin-top: 0; }
+  .header {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #9D2929;
+    width: 250px;
+    padding-bottom: 40px; }
+  .header--active {
+    display: flex; }
+  .logo {
+    margin-bottom: 25px; }
+  .menu__list {
+    order: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu__link {
+    margin-right: 0;
+    margin-bottom: 17px; }
+  .social {
+    order: 1;
+    margin-bottom: 22px; }
+    .social__link:first-child {
+      margin-left: 0; }
+  .swiper-container {
+    width: 80%; }
+  .main__content {
+    margin-top: 196px; }
+  .main__title {
+    font-size: 56px; }
+  .series {
+    width: 80%; } }
