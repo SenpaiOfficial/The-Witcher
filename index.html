@@ -6,27 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ведьмак - 1 сезон</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <div class="header">
+      <div class="header wow animate__animated animate__fadeInDown">
         <img src="img/header/logo.svg" alt="логотип" class="logo">
 
         <nav class="menu__list">
           <a href="#" class="menu__link">Описание</a>
-          <a href="#" class="menu__link">Трейлер</a>
-          <a href="#" class="menu__link">Отзывы</a>
+          <a class="menu__link" data-fancybox href="https://https://www.youtube.com/watch?v=mlO1YaqXLqw">Трейлер</a>
+          <a href="https://otzovik.com/reviews/serial_vedmak_2019/" class="menu__link">Отзывы</a>
         </nav>
 
         <div class="social">
           <a href="#" class="social__link"><img src="img/header/twitter.svg" alt=""></a>
-          <a href="#" class="social__link"><img src="img/header/instagram.svg" alt=""></a>
-          <a href="#" class="social__link"><img src="img/header/facebook.svg" alt=""></a>
+          <a href="https://www.instagram.com/aydos.mak/" class="social__link"><img src="img/header/instagram.svg" alt=""></a>
+          <a href="https://vk.com/aydosid" class="social__link"><img src="img/header/facebook.svg" alt=""></a>
         </div>
         <!-- /.social -->
 
@@ -37,7 +39,7 @@
     <!-- /.container -->
   </header>
 
-  <main class="main">
+  <main class="main wow animate__animated animate__fadeInLeft" data-wow-delay='0.8s'>
     <div class="container">
       <div class="main__content">
         <div class="content">
@@ -66,13 +68,13 @@
             этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных,
             оборотней и даже заколдованных принцесс. </p>
 
-          <button class="button">Смотреть онлайн</button>
+          <a class="button" data-fancybox href="https://https://www.youtube.com/watch?v=mlO1YaqXLqw">Смотреть трейлер</a>
 
         </div>
         <!-- /.content -->
-        <button class="play">
+        <a class="play" data-fancybox href="https://https://www.youtube.com/watch?v=mlO1YaqXLqw">
           <img src="img/main/play.svg" alt="play" class="play__img">
-        </button>
+        </a>
         <!-- /.play -->
       </div>
       <!-- /.main__content -->
@@ -95,9 +97,39 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="card series__2">
-                <span class="card__subtitle">Серия #2</span>
-                <h2 class="card__title">Четыре знака</h2>
+              <div class="card series__3">
+                <span class="card__subtitle">Серия #3</span>
+                <h2 class="card__title">Плотва и Ведьмак</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card series__4">
+                <span class="card__subtitle">Серия #4</span>
+                <h2 class="card__title">Ведьмы</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card series__5">
+                <span class="card__subtitle">Серия #5</span>
+                <h2 class="card__title">Убийство за кроны</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card series__6">
+                <span class="card__subtitle">Серия #6</span>
+                <h2 class="card__title">Предназначение</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card series__7">
+                <span class="card__subtitle">Серия #7</span>
+                <h2 class="card__title">Ведьма и Ведьмак</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card series__8">
+                <span class="card__subtitle">Серия #8</span>
+                <h2 class="card__title">Предназначение - судьба</h2>
               </div>
             </div>
           </div>
@@ -126,7 +158,8 @@
     </div>
     <!-- /.container -->
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
